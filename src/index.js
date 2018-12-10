@@ -5,19 +5,19 @@ import {dnd} from './js/dnd';
 
 const container = document.querySelector('.container');
 
-const list = [
-    {name: 'Иван', last_name: 'Иванов'},
-    {name: 'Пётр', last_name: 'Петров'},
-    {name: 'Максим', last_name: 'Максимов'},
-    {name: 'Василий', last_name: 'Васильев'}
+VK.init({
+    apiId: 6769892
+});
 
-];
-
-// container.innerHTML = render( {items: list} );
-
-dnd();
-
+// const list = [
+//     {name: 'Иван', last_name: 'Иванов'},
+//     {name: 'Пётр', last_name: 'Петров'},
+//     {name: 'Максим', last_name: 'Максимов'},
+//     {name: 'Василий', last_name: 'Васильев'}
 //
-// VK.init({
-//     apiId: 6769892
-// });
+// ];
+//
+// // container.innerHTML = render( {items: list} );
+//
+// dnd();
+
