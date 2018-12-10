@@ -8,14 +8,15 @@ VK.init({
 
 function auth() {
     return new Promise((resolve, reject) => {
-        VK.auth.login(data => {
+        VK.Auth.login(data => {
             if (data.session) {
                 resolve();
             } else {
-                reject(new Error('Не удалось авторизироваться'));
+                reject (new Error('Не удалось авторизироваться'));
             }
         }, 2);
     })
 }
-auth().then(() => console.log('ok'));
 
+
+auth().then(() => console.log('ok'));
