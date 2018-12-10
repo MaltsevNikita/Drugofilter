@@ -37,10 +37,10 @@ auth()
     .then(() => {
         return callAPI('users.get', { name_case: 'gen'})
     })
-    .then(([me]) => {
-        var headerInfo = document.querySelector('.header');
-        headerInfo.textContent = 'Друзья на странице $(me.first_name) $(me.last_name)';
+    .then(me => {
+        console.log([me]);
     });
 
-// console.log([me]);
+
+
 // auth().then(() => console.log('ok'));
