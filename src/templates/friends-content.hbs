@@ -1,1 +1,56 @@
-<h1>Friends filter!!!!!</h1>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Выберите друзей</h1>
+    </div>
+
+    <div class="search">
+        <div class="columns" align="center">
+
+            <div class="leftColumn" align="left">
+                <input type="search" id="searchFriends" placeholder="Начните вводить имя друга">
+                <ul class="VK_Friens">
+                    <li>1 item</li>
+                    <li>2 item</li>
+                    <li>3 item</li>
+                    <li>4 item</li>
+                    <li>5 item</li>
+
+                </ul>
+
+            </div>
+
+            <div class="rightColumn" align="left">
+                <input type="search" id="addedFriends" placeholder="Название">
+                <ul class="SelectedFriens">
+                    <li>1 item</li>
+                    <li>2 item</li>
+                    <li>3 item</li>
+                    <li>4 item</li>
+                    <li>5 item</li>
+                    <li>6 item</li>
+                    <li>7 item</li>
+                    <li>8 item</li>
+                    <li>9 item</li>
+                    <li>10 item</li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="saveBtn">Сохранить</div>
+
+    <script id="user-template" type="text/x-handlebars-template">
+        <div class="friends">
+            {{#each items}}
+                <div class="friend">
+                    <img src="{{photo_100}}"/>
+                    <div>{{first_name}} {{last_name}}</div>
+                </div>
+            {{/each}}
+        </div>
+    </script>
+</div>
