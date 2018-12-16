@@ -43,7 +43,7 @@ auth()
 
         return callAPI('friends.get', {friends: 'city, country,photo_100' });
     })
-    .then(friends => {
+    .then(friends => { 
     console.log(friends)
 });
 
